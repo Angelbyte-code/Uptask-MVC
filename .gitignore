@@ -1,1 +1,8 @@
+#Se agrego node_modules
 node_modules
+
+#se agrego vendor
+vendor
+
+## composer.lock
+composer.lock
