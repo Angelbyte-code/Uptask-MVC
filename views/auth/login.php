@@ -1,11 +1,11 @@
 <div class="contenedor">
     <h1>UpTask</h1>
-    <p>Crea y Administra tus Projectos</p>
+    <p class="tagline">Crea y Administra tus Projectos</p>
 
     <div class="contenedor-sm">
         <p class="descripcion-pagina">Inciar Sesión</p>
 
-        <form action="/" method="post">
+        <form class="formulario" action="/" method="POST">
             <div class="campo">
                 <label for="email">Email</label>
                 <input
