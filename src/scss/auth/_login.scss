@@ -2,7 +2,7 @@
 @use "base/mixins" as m;
 @use "sass:color";
 
-.crear {
+.login {
     margin-top: 5rem;
   .uptask {
     background: linear-gradient(
@@ -17,6 +17,17 @@
 
     @include m.tablet {
       font-size: 10rem;
+    }
+  }
+
+  input[type="submit"]{
+
+    @include m.boton (v.$esmeralda, v.$blanco);
+  }
+
+  .acciones{
+    a{
+      color: v.$esmeralda;
     }
   }
 }
