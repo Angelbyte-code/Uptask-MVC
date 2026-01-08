@@ -5,19 +5,7 @@
 .login {
     margin-top: 5rem;
   .uptask {
-    background: linear-gradient(
-      to right,
-      v.$pizarra 0%,
-      color.scale(v.$esmeralda, $lightness: 30%) 100%
-    );
-    color: transparent;
-    background-clip: text;
-    text-align: center;
-    font-size: 7rem;
-
-    @include m.tablet {
-      font-size: 10rem;
-    }
+   @include m.textoDegradado (v.$pizarra, v.$esmeralda);
   }
 
   input[type="submit"]{

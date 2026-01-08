@@ -47,3 +47,19 @@
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
 }
+
+@mixin textoDegradado ($colorInicial, $colorSecundario){
+      background: linear-gradient(
+      to right,
+      $colorInicial 0%,
+      color.scale($colorSecundario, $lightness: 30%) 100%
+    );
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+    font-size: 7rem;
+
+    @include tablet {
+      font-size: 10rem;
+    }
+}
