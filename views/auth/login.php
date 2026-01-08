@@ -1,7 +1,5 @@
 <div class="contenedor login">
-    <h1 class="uptask">UpTask</h1>
-    <p class="tagline">Crea y Administra tus Projectos</p>
-
+    <?php include_once __DIR__ . '/../templates/nombre-citio.php' ?>
     <div class="contenedor-sm">
         <p class="descripcion-pagina">Inciar Sesión</p>
 
@@ -16,10 +14,10 @@
                     require />
             </div>
             <div class="campo">
-                <label for="pass">Password</label>
+                <label for="password">Password</label>
                 <input
                     type="password"
-                    id="pass"
+                    id="password"
                     placeholder="Ingresa tu Password"
                     name="password"
                     require />

@@ -4,6 +4,7 @@
 
 .formulario {
   margin-top: 5rem;
+  
   .campo {
     display: flex;
     align-items: center;
@@ -22,7 +23,7 @@
         $lightness: 95%
       ); 
       color: v.$pizarra;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       transition: all 0.3s ease; 
       outline: none;
 
