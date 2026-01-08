@@ -35,12 +35,16 @@ class LoginController
 
 
     }
-    public static function olvide()
+    public static function olvide(Router $router)
     {
-        echo "desde el olvide";
 
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
+        //Render de la vista
+        $router->render('auth/recuperarPass',[
+            'titulo' => 'Recuperar Contraseña',
+        ]);
+
     }
     public static function reestablecer()
     {

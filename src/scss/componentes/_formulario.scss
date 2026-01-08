@@ -4,7 +4,7 @@
 
 .formulario {
   margin-top: 5rem;
-  
+
   .campo {
     display: flex;
     align-items: center;
@@ -14,28 +14,7 @@
       flex: 0 0 10rem;
     }
     input {
-      flex: 1;
-      padding: 0.9rem 1.4rem; 
-      border: 2px solid transparent; 
-      border-radius: 8px; 
-      background-color: color.scale(
-        v.$gris,
-        $lightness: 95%
-      ); 
-      color: v.$pizarra;
-      font-size: 1.4rem;
-      transition: all 0.3s ease; 
-      outline: none;
-
-      &::placeholder {
-        color: color.scale(v.$gris, $lightness: 40%);
-      }
-
-      &:focus {
-        background-color: #fff;
-        border-color: v.$esmeralda;
-        box-shadow: 0 0 0 4px color.scale(v.$esmeralda, $lightness: 80%); 
-      }
+      @include m.colorCampos(v.$pizarra, v.$azul);
     }
   }
 }
