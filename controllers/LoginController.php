@@ -65,8 +65,10 @@ class LoginController
         ]);
     }
 
-    public static function confirmar()
+    public static function confirmar(Router $router)
     {
-        echo "desde el confirmar";
+        $router->render('auth/confirmar',[
+            'titulo' => 'Confirmar cuenta',
+        ]);
     }
 }
